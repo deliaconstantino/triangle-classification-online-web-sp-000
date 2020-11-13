@@ -5,13 +5,9 @@ class Triangle
     @side_a = side_a
     @side_b = side_b
     @side_c = side_c
-    @all_sides = []
-    self.all_s(@side_a, @side_b, @side_c)
+    @all_sides = [@side_a, @side_b, @side_c]  
   end
 
-  def all_s(a, b, c)
-    @all_sides.push(a, b, c)
-  end
 
   def kind
     if @all_sides.any? {|num| num <= 0}
