@@ -5,7 +5,7 @@ class Triangle
     @side_a = side_a
     @side_b = side_b
     @side_c = side_c
-    @all_sides = [@side_a, @side_b, @side_c]  
+    @all_sides = [@side_a, @side_b, @side_c]
   end
 
 
