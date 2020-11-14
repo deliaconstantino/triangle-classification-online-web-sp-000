@@ -4,9 +4,9 @@ class Triangle
   end
 
   def kind
-    if @all_sides.any? {|num| num <= 0}
+    if @all_sides.any? { |num| num <= 0 }
       raise TriangleError
-    elsif @all_sides.any? {|num| num >= @all_sides.sum - num }
+    elsif @all_sides.any? { |num| num >= @all_sides.sum - num }
       raise TriangleError
     elsif @all_sides[0] == @all_sides[1] && @all_sides[1] == @all_sides[2]
       return :equilateral
