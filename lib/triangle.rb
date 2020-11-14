@@ -17,6 +17,9 @@ class Triangle
       @all_sides.any? { |num| num >= @all_sides.sum - num }
   end
 
+  def is_equilateral?
+
+
   class TriangleError < StandardError
   end
 end
