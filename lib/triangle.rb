@@ -13,7 +13,8 @@ class Triangle
   end
 
   def is_any_side_invalid?
-    @all_sides.any? { |num| num <= 0 }
+    @all_sides.any? { |num| num <= 0 } || 
+      @all_sides.any? { |num| num >= @all_sides.sum - num }
   end
 
   class TriangleError < StandardError
